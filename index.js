@@ -2,7 +2,7 @@ function nextNumber(number) {
     // get each digits from input number
     let digits = number.toString().split('').map(Number);
     
-    // get the digits to swap, look for number that smaller than RHS number, starting from right
+    // get the target digit to swap, look for number that smaller than RHS number, starting from right
     let targetIndex = digits.length - 2;
     while(targetIndex >= 0 && digits[targetIndex] >= digits[targetIndex + 1]) {
         targetIndex--;
