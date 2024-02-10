@@ -10,10 +10,8 @@ Run the code with:
 
 ## Crispy Dollop
 
-Get the **next bigger** value by rearranging the digits of current integer.
-
 ### Problem: 
-> Most of the solution will get the problem wrong by creating the **biggest value** instead of **next bigger value**.
+> Get the **next bigger** value by rearranging the digits of current integer.
 
 ### Solution:
 > 1. Get the digits of the current integer.
@@ -31,12 +29,13 @@ Try on a solution without applying sorting to have a better performance for larg
 ## Scaling Umbrella
 
 ### Problem: 
-> Travel 2D-array in clockwise from outer to inner elements.
+> Travel 2D-array in clockwise from outer to inner layer.
 
 ### Solution:
 > 1. Initialize empty array to store result.
 > 2. Use while loop to loop through outer layer to inner layer of the 2D-array.
-> 3. In the while loop, create four loop to travel top, right, bottom, and left element in sequence and push the element to the result array. After each loop completed, update the row or col position to point to next inner layer.
+> 3. In the while loop, create four loop to travel top, right, bottom, and left element in sequence, push the element into result array.
+> 4. After each loop completed, update the row or col to next inner layer.
 
 ### Comment and Suggestion
-Try on a solution with recursive function instead of looping.
+Try on a solution with recursive function instead of looping, but resursive solution might be harder for other developer to understand.
